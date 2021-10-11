@@ -1,6 +1,6 @@
 import os
 file_dict = {}
-fin_file = '4.txt'
+fin_file = 'finish.txt'
 for file in os.listdir():
     if ".txt" in file and fin_file not in file:
         file_dict[file] = len(open(file, 'r', encoding='utf-8').readlines())
